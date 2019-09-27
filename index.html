@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+		<div class="calculator">
+			<div class="screen">
+				<div class="equation"></div>
+				<div class="entry">0</div>
+			</div>
+			<div class="keys">
+				<div class="column">
+					<button class="grey-button grey-hover">CE</button>
+					<button class="black-button grey-hover">7</button>
+					<button class="black-button grey-hover">4</button>
+					<button class="black-button grey-hover">1</button>
+					<button class="grey-button grey-hover">±</button>
+				</div>
+				<div class="column">
+					<button class="c grey-button grey-hover">C</button>
+					<button class="black-button grey-hover">8</button>
+					<button class="black-button grey-hover">5</button>
+					<button class="black-button grey-hover">2</button>
+					<button class="black-button grey-hover">0</button>
+				</div>
+				<div class="column">
+					<button class="backspace grey-button grey-hover">
+						<i class="fa fa-backspace"></i>
+					</button>
+					<button class="black-button grey-hover">9</button>
+					<button class="black-button grey-hover">6</button>
+					<button class="black-button grey-hover">3</button>
+					<button class="grey-button grey-hover">.</button>
+				</div>
+				<div class="column">
+					<button class="grey-button blue-hover">÷</button>
+					<button class="grey-button blue-hover">×</button>
+					<button class="grey-button blue-hover">-</button>
+					<button class="grey-button blue-hover">+</button>
+					<button class="grey-button blue-hover">=</button>
+				</div>
+			</div>
+		</div>
+		<div class="history">
+			<div class="history-title">
+				<span>History</span>
+			</div>
+			<div class="history-content">
+				<div></div>
+			</div>
+			<i class="far fa-trash-alt grey-hover"></i>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    color:whitesmoke;
+    font-family: 'Segoe UI';
+    user-select: none;
+}
+
+.container {
+    background-color: #2121218f;
+    display: flex;
+    width: 35rem;
+    height: fit-content;
+    margin: 0;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+    padding: 5px 5px 0 5px;
+}
+
+.screen {
+    height: 12rem;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+}
+
+.equation {
+    height: 3rem;
+    width: 100%;
+    overflow: auto;
+    margin-top: 3rem;
+    color: #a7a7a7;
+    text-align: right;
+}
+
+.equation::-webkit-scrollbar {
+    height: 3px;
+}
+
+.equation::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.equation::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.equation::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.entry {
+    width: 100%;
+    height: 6rem;
+    margin: 0;
+    overflow: auto;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.entry::-webkit-scrollbar {
+    height: 3px;
+}
+
+.entry::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.entry::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.entry::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.keys {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    padding: 5px;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.column {
+    margin: 2.5px;
+    width: 25%;
+    height: fit-content;
+}
+
+button {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    outline: none;
+}
+
+.grey-button {
+    background-color: #1a1a1a;
+}
+
+.black-button {
+    background-color: #0f0f0f;
+}
+
+.grey-hover:hover {
+    background-color: #5a5a5a;
+}
+
+.grey-hover:active, .grey-press {
+    background-color: #7a7a7a;
+}
+
+.blue-hover:hover {
+    color: #0f0f0f;
+    background-color: #007bf7;
+}
+
+.blue-hover:active, .blue-press {
+    background-color: #0954a0;
+    color: #0f0f0f;
+}
+
+.history {
+    width: 40%;
+    padding: 5px;
+    position: relative;
+}
+
+.history-title {
+    padding: 5px 5px 0 5px;
+}
+
+.history-title span {
+    border-bottom: 3px solid rgb(0, 123, 247);
+    padding-bottom: 5px;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.history-content {
+    overflow: auto;
+    width: 100%;
+    height: 27rem;
+    padding: 15px;
+    text-align: right;
+    color: #a7a7a7;
+    font-size: 1rem;
+}
+
+.history-content::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.history-content::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.history-content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.history-content::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.fa-trash-alt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.history-content>div:hover {
+    background-color: #5a5a5a52;
+}
+
+.history-content>div:active {
+    background-color: #7a7a7a52;
+}
